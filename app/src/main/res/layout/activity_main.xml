@@ -11,12 +11,13 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="168dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
         android:hint="Texto a contar"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,19 +26,37 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="50dp"
         android:text="ContarCaracter"
-        app:layout_constraintEnd_toStartOf="@+id/btnContarPalabla"
+        app:layout_constraintEnd_toStartOf="@+id/btnContarPalabra"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="199dp" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextFrase" />
 
     <Button
-        android:id="@+id/btnContarPalabla"
+        android:id="@+id/btnContarPalabra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="32dp"
         android:text="ContarPalabra"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/btnContarCaracter"
-        tools:layout_editor_absoluteY="199dp" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextFrase" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:text="CONTADOR"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
