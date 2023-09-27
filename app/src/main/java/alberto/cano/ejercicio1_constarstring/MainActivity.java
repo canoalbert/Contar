@@ -14,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
     private Button btnContarCaracter;
     private Button btnContarPalabra;
 
-    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,8 +51,8 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "El texto esta en blanco", Toast.LENGTH_SHORT).show();
                 }else {
                     String[] palabras = frase.split("\\s+");
-                    int numCaracteres = palabras.length;
-                    Toast.makeText(MainActivity.this, "La frase contiene el siguiente número de palabras" + numCaracteres, Toast.LENGTH_SHORT).show();
+                    int numPalabra = palabras.length;
+                    Toast.makeText(MainActivity.this, "La frase contiene el siguiente número de palabras" + numPalabra, Toast.LENGTH_SHORT).show();
                 }
             }
         });
